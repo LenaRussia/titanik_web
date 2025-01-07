@@ -1,0 +1,42 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    line-height: 1.4em;
+    font-size: 20px;
+    height: 100%;
+}
+p {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 55px;
+    margin-top: 3%;
+    line-height: 55px;
+    font-family: 'Geist', sans-serif;
+                    'font-weight': 'bold',
+
+    color: red;
+}
+.questionare {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.custom-radio .radio-item input[type="radio"] {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items on small screens */
+    }
+    .container {
+        padding: 10px; /* Add padding for mobile */
+    }
+}
+img {
+    width: 100%;
+    margin-bottom: 30px;
+}

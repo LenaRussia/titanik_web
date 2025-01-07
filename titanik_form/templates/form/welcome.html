@@ -1,0 +1,30 @@
+{% load static %}
+{% load plotly_dash %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Titanik prediction</title>
+
+</head>
+<img src="{% static 'images/titanik_fon.jpg' %}" alt="Cat sitting on foreground and Titanik on the background" >
+<h2>Let's find out!</h2>
+<p>Fill in the form and you'll get the answer.</p>
+<body>
+<div class="questionare" >
+    {% plotly_app name='titanik' ratio=2 %}
+</div>
+
+<h2><a href="{% url 'titanik_form' %}">Reload</a></h2>
+
+</body>
+</html>
